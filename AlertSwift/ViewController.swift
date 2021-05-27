@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         let okButton = UIAlertAction(title: "OK!!", style: UIAlertAction.Style.default) { (<#UIAlertAction#>) in
                 print("button clicked")
         }
-        
+        alert.addAction(okButton)
         self.present(alert, animated: true, completion: nil)
         
     }
