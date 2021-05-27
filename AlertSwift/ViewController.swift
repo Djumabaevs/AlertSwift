@@ -19,10 +19,12 @@ class ViewController: UIViewController {
 
     @IBAction func signupClicked(_ sender: Any) {
         let alert = UIAlertController(title: "Error!!", message: "Username not found", preferredStyle: UIAlertController.Style.alert)
-        let okButton = UIAlertAction(title: "OK!!", style: UIAlertAction.Style.default) { (<#UIAlertAction#>) in
-                print("button clicked")
+        
+        let okButton = UIAlertAction(title: "OK!!", style: UIAlertAction.Style.default) { UIAlertAction in
+            print("clicked button")
         }
         alert.addAction(okButton)
+        
         self.present(alert, animated: true, completion: nil)
         
     }
