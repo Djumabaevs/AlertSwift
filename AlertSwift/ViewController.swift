@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func signupClicked(_ sender: Any) {
+        let alert = UIAlertController(title: "Error!!", message: "Username not found", preferredStyle: UIAlertController.Style.alert)
+        
     }
     
 }
